@@ -1,3 +1,2 @@
 "use strict";
-var test = 'teste de ficheiro!';
-console.log(test);
+// creating a Scope, call this IIFE Immediately Invoked Function Expression
