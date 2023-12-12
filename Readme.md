@@ -10,7 +10,19 @@
 
 ## 2. Install TypeScript
 
-`tsconfig.json`
+- Instalar o TypeScript no terminal, com o comando:
+
+	npm install -g typescript
+
+- Testar se o TypeScript está instalado no terminal, com o comando:
+
+	tsc -v
+
+- Criar um arquivo `tsconfig.json` na raiz do projeto, com o comando:
+	
+	tsc --init
+
+ou no `tsconfig.json`, alterar ou ja cria-lo assim:
 
 ```javascript
 {
