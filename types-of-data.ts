@@ -23,10 +23,10 @@ let person = {
 };
 
 // Dinamically typed in JS (don't nessesary to declare the type), but in TS we can do it
-var _y: any = 15;
-_y = "Hello";
+let _yy: any = 15;
+_yy = "Hello";
 
 // Another values
-var z: undefined; // inside is a undefined value
-var _person: null; // inside is a null value -- null represent: don't exist any person in this variable
+let z: undefined; // inside is a undefined value
+let _person: null; // inside is a null value -- null represent: don't exist any person in this letiable
 
