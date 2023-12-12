@@ -7,7 +7,7 @@ interface Person {
     lastName: string;
     age: number;
     city: string;
-    presentation: () => void; // Em outras palavras, a função é executada apenas para realizar alguma ação ou efeito colateral, mas não retorna um valor específico.
+    presentation: () => void; // A função é executada apenas para realizar alguma ação ou efeito colateral, mas não retorna um valor específico.
 };
 
 var obj: Person = {
@@ -15,7 +15,7 @@ var obj: Person = {
     lastName: "Doe",
     age: 30,
     city: "Texas",
-    presentation: introduction
+    presentation: introduction // A função é executada apenas para realizar alguma ação ou efeito colateral, mas não retorna um valor específico.
 };
 
 function introduction(this: Person) {
