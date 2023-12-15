@@ -29,13 +29,13 @@ ned.introduce();
 
 // ned.darTchau = function() { console.log('Tchau'); }
 
-// Stark.prototype.sayGoodbye = function() { console.log('Goodbye'); } // JS -> Adding a method to the Prototype. Very useful for adding things to objects that already exist.
+// Stark.prototype.sayGoodbye = function() { console.log('Goodbye'); } // JS (it's easy) -> Adding a method to the Prototype. Very useful for adding things to objects that already exist.
 
 interface Stark { // -> TS -> Adding a method to the Prototype. First, we need to declare the interface.
     sayGoodbye(): string;
 }
 
-Stark.prototype.sayGoodbye = function() { // -> TS -> Adding a method to the Prototype. Then, we can add the method.
+Stark.prototype.sayGoodbye = function() { // -> TS (it's hard)-> Adding a method to the Prototype. Then, we can add the method.
     console.log('Goodbye');
     return 'Goodbye';
 }
