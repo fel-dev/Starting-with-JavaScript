@@ -1,2 +1,2 @@
-var s: string = "The winter is coming. It's really coming!";
-console.log(s.concat("!","!", "?"));
+var s: string = "Ned, Jon, Robb, Bran, Rickon";
+console.log(s.split(", ")); // ["Ned", "Jon", "Robb", "Bran", "Rickon"]
