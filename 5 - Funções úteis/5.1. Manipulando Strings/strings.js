@@ -1,3 +1,3 @@
 "use strict";
 var s = "The winter is coming. It's really coming!";
-console.log(s.indexOf("coming"));
+console.log(s.lastIndexOf("coming"));
