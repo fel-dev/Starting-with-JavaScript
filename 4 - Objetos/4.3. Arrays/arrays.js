@@ -1,3 +1,3 @@
 "use strict";
-var stark = ["Ned", "João", "Rob"];
-console.log(stark[1]);
+var stark = ["Ned", 2, function () { }, [], true];
+console.log(stark[2]);
