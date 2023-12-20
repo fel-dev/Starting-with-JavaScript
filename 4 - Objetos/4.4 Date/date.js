@@ -1,3 +1,3 @@
 "use strict";
-var d = new Date("07/01/2016 05:30:00");
+var d = new Date("2016/01/01");
 console.log(d);
