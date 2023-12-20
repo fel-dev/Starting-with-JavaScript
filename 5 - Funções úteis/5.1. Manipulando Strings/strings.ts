@@ -1,2 +1,2 @@
 var s: string = "The winter is coming. It's really coming!";
-console.log(s.toUpperCase());
+console.log(s.toLowerCase());
