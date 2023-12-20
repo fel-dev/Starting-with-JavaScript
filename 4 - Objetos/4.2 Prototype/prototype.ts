@@ -29,14 +29,12 @@ class Stark {
 
 var ned: Stark = new Stark('Ned', 40, 'Preto');
 ned.introduce();
-
 // ned.darTchau = function() { console.log('Tchau'); } // JavaScript
 // Stark.prototype.sayGoodbye = function() { console.log('Goodbye'); } // In JS (it's easy) -> Adding a method to the Prototype. Very useful for adding things to objects that already exist.
 
 interface Stark { // In TS (it's hard) -> Adding a method to the Prototype. First, we need to declare the interface.
     sayGoodbye(): string;
 }
-
 Stark.prototype.sayGoodbye = function() { // also, in TS -> Then we can add the method.
     console.log('Goodbye');
     return 'Goodbye';
