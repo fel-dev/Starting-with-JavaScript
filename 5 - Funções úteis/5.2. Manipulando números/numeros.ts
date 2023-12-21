@@ -1,1 +1,1 @@
-var x: number = 30;
+var x: number = 30.000;
