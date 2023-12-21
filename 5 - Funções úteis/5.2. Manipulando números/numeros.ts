@@ -1,4 +1,4 @@
-var x: number = 456e5; //45600000
+var x: number = 4.56e7; //45600000
 var y: number = 456e-6; //0.000456
 
 var z: number = 0.99999999999999999; // 1
@@ -10,5 +10,5 @@ console.log(b.toString(16));
 
 // exponencial
 
-console.log(x.toExponential(0)); // 5e+7 (0 casas decimais)
+console.log(x.toExponential()); // 4.56e+7
 

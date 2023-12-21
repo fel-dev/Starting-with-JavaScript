@@ -1,9 +1,9 @@
 "use strict";
-var x = 456e5; //45600000
+var x = 4.56e7; //45600000
 var y = 456e-6; //0.000456
 var z = 0.99999999999999999; // 1
 var a = 0xFFF; // 4095
 var b = 0o7777; // 4095
 console.log(b.toString(16));
 // exponencial
-console.log(x.toExponential(0)); // 5e+7 (0 casas decimais)
+console.log(x.toExponential()); // 4.56e+7
