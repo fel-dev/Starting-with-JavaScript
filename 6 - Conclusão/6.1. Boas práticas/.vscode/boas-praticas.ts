@@ -1,36 +1,23 @@
 "use strict";
-// Boas práticas: Evitar o Hoisting
+// melhorando a legibilidade do código quando se usa o var, várias vezes
 (function() {
-  escopo = 'local';
-  console.log(escopo);
-
-
-  
-  var escopo: string;
+  var escopoLocal: string, 
+      escopoGlobal: string, 
+      foo: string;
+      
 })();
 
 /* 
-O hoisting é um comportamento do JavaScript em que as declarações de variáveis e funções são movidas para o topo do escopo em tempo de compilação. 
-Embora o hoisting seja uma característica do JavaScript, é considerado uma prática ruim e pode levar a comportamentos inesperados e difíceis de depurar.
+When we declaring multiple variables of the same type, you can use commas to separate them 
+instead of repeating the type keyword. This practice improves code readability by reducing redundancy 
+and making the code more concise.
 
-Para evitar o hoisting e escrever um código mais legível e previsível, é recomendado seguir as seguintes boas práticas:
+This can make the code easier to read and maintain, especially when there are many variables 
+to declare.
 
-1. Declare todas as variáveis no início do escopo: É uma boa prática declarar todas as variáveis no início do escopo em que serão usadas. Isso torna o 
-código mais fácil de entender e evita problemas relacionados ao hoisting.
-
-2. Utilize o modo estrito (strict mode): O modo estrito do JavaScript (strict mode) é uma funcionalidade que permite escrever código JavaScript mais 
-seguro e restrito. Ao habilitar o modo estrito, o JavaScript é executado em um ambiente mais restrito, onde algumas práticas ruins, como o hoisting, 
-são proibidas. Para habilitar o modo estrito, adicione a seguinte linha no início do seu arquivo JavaScript ou TypeScript:
-
-"use strict";
-
-Ao utilizar o modo estrito, o JavaScript irá lançar erros para práticas ruins, como o uso de variáveis não declaradas e atribuições a propriedades 
-somente leitura.
-
-3. Utilize o TypeScript: O TypeScript é um superset do JavaScript que adiciona recursos de tipagem estática ao JavaScript. O TypeScript é compilado para 
-JavaScript antes de ser executado, o que permite que o compilador faça otimizações e verifique erros em tempo de compilação. O TypeScript também ajuda 
-a evitar problemas relacionados ao hoisting, pois as declarações de variáveis e funções são movidas para o topo do escopo durante o processo de 
-compilação.
-
-Seguindo essas boas práticas, você pode evitar problemas relacionados ao hoisting e escrever um código mais legível, previsível e seguro.
+Mais:
+  - Evitar usar o var, pois ele não tem escopo de bloco, apenas de função
+  - Usar o let e const, pois eles tem escopo de bloco
+  - Usar o const sempre que possível, pois ele não pode ser alterado
+  - Usar o let quando for necessário alterar o valor da variável
 */
