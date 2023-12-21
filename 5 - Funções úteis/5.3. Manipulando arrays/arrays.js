@@ -11,6 +11,6 @@ console.log(element); // Catelyn
 console.log(array); // ["Ned", "Jon", "Robb", "Bran", "Rickon"]
 array[1] = "Jon Snow"; // ["Ned", "Jon Snow", "Robb", "Bran", "Rickon"]
 console.log(array);
-// array removing elements, with slice
-var slice = array.slice(3); // ["Bran", "Rickon"]
-console.log(slice); // ["Bran", "Rickon"]
+// array removing elements, with slice 
+var slice = array.slice(3, 4); // ["Bran"]
+console.log(slice); // 
