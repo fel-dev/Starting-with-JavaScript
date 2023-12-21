@@ -11,6 +11,6 @@ console.log(array);
 
 // remove the last element
 
-array.pop(); // ["Ned", "Jon", "Robb", "Bran", "Rickon"]
+var element: string | undefined = array.pop(); 
 
-console.log(array); 
+console.log(element); // Sansa

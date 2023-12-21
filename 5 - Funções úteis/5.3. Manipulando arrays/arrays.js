@@ -6,5 +6,5 @@ array.push("Sansa"); // ["Ned", "Jon", "Robb", "Bran", "Rickon", "Sansa"]
 array.unshift("Catelyn");
 console.log(array);
 // remove the last element
-array.pop(); // ["Ned", "Jon", "Robb", "Bran", "Rickon"]
-console.log(array);
+var element = array.pop();
+console.log(element); // Sansa
