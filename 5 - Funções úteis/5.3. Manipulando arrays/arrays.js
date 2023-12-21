@@ -13,10 +13,9 @@ array[1] = "Jon Snow"; // ["Ned", "Jon Snow", "Robb", "Bran", "Rickon"]
 console.log(array);
 var slice = array.slice(3, 4); // ["Bran"]
 console.log(slice); // 
-// Splice method changes the original array. Allow to add and remove elements too.
-// primeiro argumento é o índice do array onde começar a alteração
-// segundo argumento é o número de elementos a serem removidos
-// terceiro argumento é o elemento a ser adicionado no lugar dos removidos
 var splice = array.splice(1, 1, "Arya", "Sansa");
 console.log(splice); // ["Jon Snow"] altera o array original
 console.log(array); // ["Ned", "Arya", "Sansa", "Robb", "Bran", "Rickon"] 
+// Splice method changes the original array. Allow to add and remove elements too.
+array.splice(3, 1); // Removing element Robb, index 3, 1 element
+console.log(array); // ["Ned", "Arya", "Sansa", "Bran", "Rickon"]
