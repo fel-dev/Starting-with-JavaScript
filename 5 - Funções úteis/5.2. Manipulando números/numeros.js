@@ -6,4 +6,4 @@ var a = 0xFFF; // 4095
 var b = 0o7777; // 4095
 console.log(b.toString(16));
 console.log(x.toExponential()); // 4.56e+7
-console.log(y.toFixed(2)); // 0.00 (dinheiro) mais proximo de 0 do que de 1 -- arredondamento para baixo
+console.log((5.889).toFixed(2)); // preço da gasolina
