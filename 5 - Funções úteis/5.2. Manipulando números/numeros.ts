@@ -11,4 +11,4 @@ var a: number = 0xFFF; // 4095
 
 var b: number = 0o7777;
 
-console.log(b.toString(16)); // base hexadecimal
+console.log(b.toString(8)); // base octal 
