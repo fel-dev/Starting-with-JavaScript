@@ -7,8 +7,18 @@
       
     escopoLocal = "foo";
 
-    var obj = {fu: "bar"};
-    var array: string[] = ["foo", "bar"];
+    //  fix this in TS, you should declare obj as an object with properties fu, to, and tofu, all of which are of type string. Here's how you can do it:
+    var obj: { fu: string, to: string, tofu: string } = {
+      fu: "bar",
+      to: "fu",
+      tofu: "dido"
+    };
+
+    var array: number[] = [
+      1, 
+      2,
+      3
+    ];
 })();
 
 /* 
@@ -21,6 +31,6 @@ no final da linha, colocar a virgula, ou ponto e virgula, e não esquecer de apa
 querer saber a diferença entre um e outro.
 3. isso vale também para os arrays.
   - mas a abertura do array, pode ser na mesma linha, e o fechamento do array, pode ser numa linha separada.
-
+4. quando mudar de assunto nos arrays, dar uma quebra de linha, para ficar mais legivel.
 
 */
