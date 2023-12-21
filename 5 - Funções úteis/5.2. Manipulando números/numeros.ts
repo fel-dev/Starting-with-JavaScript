@@ -10,5 +10,5 @@ console.log(b.toString(16));
 
 // exponencial
 
-console.log(x.toExponential(4)); // 4 casas decimais
+console.log(x.toExponential(1)); // arredondar para 1 casa decimal
 
