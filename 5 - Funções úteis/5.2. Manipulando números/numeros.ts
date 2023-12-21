@@ -10,5 +10,5 @@ console.log(b.toString(16));
 
 // exponencial
 
-console.log(x.toExponential(1)); // arredondar para 1 casa decimal
+console.log(x.toExponential(0)); // 5e+7 (0 casas decimais)
 
