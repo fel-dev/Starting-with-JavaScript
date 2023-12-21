@@ -6,4 +6,4 @@ var a = 0xFFF; // 4095
 var b = 0o7777; // 4095
 console.log(b.toString(16));
 // exponencial
-console.log(x.toExponential());
+console.log(x.toExponential(4)); // 4 casas decimais

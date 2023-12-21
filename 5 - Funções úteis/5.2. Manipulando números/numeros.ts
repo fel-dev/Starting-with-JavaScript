@@ -10,5 +10,5 @@ console.log(b.toString(16));
 
 // exponencial
 
-console.log(x.toExponential());
+console.log(x.toExponential(4)); // 4 casas decimais
 
