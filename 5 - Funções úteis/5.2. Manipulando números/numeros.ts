@@ -12,4 +12,4 @@ console.log(x.toExponential()); // 4.56e+7
 
 console.log((5.889).toFixed(2));  // preço da gasolina
 
-
+console.log((5.889).toPrecision(1)); // 6 (arredonda)
