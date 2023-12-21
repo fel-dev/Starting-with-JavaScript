@@ -6,4 +6,4 @@ var a = 0xFFF; // 4095
 // toString - converte para string com base no parametro. 
 // Se não for passado parametro, converte para base 10
 var b = 0o7777;
-console.log(b.toString(2)); // base binaria 
+console.log(b.toString()); // base 10
