@@ -1,23 +1,25 @@
 "use strict";
-// melhorando a legibilidade do código quando se usa o var, várias vezes
+// Usar aspas duplas para strings
 (function() {
   var escopoLocal: string, 
       escopoGlobal: string, 
       foo: string;
       
+    escopoLocal = "foo";
+
+    var obj = {
+      fu: "bar"
+    };
 })();
 
 /* 
-When we declaring multiple variables of the same type, you can use commas to separate them 
-instead of repeating the type keyword. This practice improves code readability by reducing redundancy 
-and making the code more concise.
+Usar sempre strings com aspas duplas é uma convenção comum em muitas linguagens de programação, 
+incluindo TypeScript. Isso ajuda a manter a consistência no código e facilita a leitura e compreensão 
+do mesmo. Além disso, as aspas duplas são mais amplamente suportadas em ferramentas e bibliotecas, 
+o que pode evitar problemas de compatibilidade. Ademais mesmo o JS não tendo char, mas em outras linguagens, 
+as aspas simples pode ser interpretadas como estiver colocando um caractere, e não uma string. Então o ideal
+é manter essa padronização entre as linguagens. Outra coisa é que no Json, só é aceito aspas duplas, então... 
+alguns compiladores podem dar erro se não estiver usando aspas duplas. Melhor prevenir do que remediar. Manter
+a consistência no código é muito importante.
 
-This can make the code easier to read and maintain, especially when there are many variables 
-to declare.
-
-Mais:
-  - Evitar usar o var, pois ele não tem escopo de bloco, apenas de função
-  - Usar o let e const, pois eles tem escopo de bloco
-  - Usar o const sempre que possível, pois ele não pode ser alterado
-  - Usar o let quando for necessário alterar o valor da variável
 */
