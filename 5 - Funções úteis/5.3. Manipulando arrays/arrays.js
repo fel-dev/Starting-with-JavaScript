@@ -17,5 +17,6 @@ console.log(slice); //
 // primeiro argumento é o índice do array onde começar a alteração
 // segundo argumento é o número de elementos a serem removidos
 // terceiro argumento é o elemento a ser adicionado no lugar dos removidos
-array.splice(1, 1, "Arya", "Sansa");
-console.log(array); // ["Ned", "Arya", "Sansa", "Robb", "Rickon"]
+var splice = array.splice(1, 1, "Arya", "Sansa");
+console.log(splice); // ["Jon Snow"] altera o array original
+console.log(array); // ["Ned", "Arya", "Sansa", "Robb", "Bran", "Rickon"] 
