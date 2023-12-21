@@ -1,5 +1,5 @@
 "use strict";
-// Usar aspas duplas para strings
+// Poucas propriedades no objeto, por na mesma linha
 (function() {
   var escopoLocal: string, 
       escopoGlobal: string, 
@@ -7,19 +7,20 @@
       
     escopoLocal = "foo";
 
-    var obj = {
-      fu: "bar"
-    };
+    var obj = {fu: "bar"};
+    var array: string[] = ["foo", "bar"];
 })();
 
 /* 
-Usar sempre strings com aspas duplas é uma convenção comum em muitas linguagens de programação, 
-incluindo TypeScript. Isso ajuda a manter a consistência no código e facilita a leitura e compreensão 
-do mesmo. Além disso, as aspas duplas são mais amplamente suportadas em ferramentas e bibliotecas, 
-o que pode evitar problemas de compatibilidade. Ademais mesmo o JS não tendo char, mas em outras linguagens, 
-as aspas simples pode ser interpretadas como estiver colocando um caractere, e não uma string. Então o ideal
-é manter essa padronização entre as linguagens. Outra coisa é que no Json, só é aceito aspas duplas, então... 
-alguns compiladores podem dar erro se não estiver usando aspas duplas. Melhor prevenir do que remediar. Manter
-a consistência no código é muito importante.
+Poucas propriedades no objeto, por na mesma linha. Mas se for muitas propriedades, colocar uma por linha.
+Quando usar varias propriedades, colocar uma por linha, e colocar a virgula no final da linha.
+no final da linha, colocar a virgula, ou ponto e virgula, e não esquecer de apagar o espaço em branco.
+
+1. esse espaço em branco, pode gerar um erro, quando for fazer um merge, pois o git vai entender que foi alterado o arquivo.
+2. esse espaço em branco, pode gerar um erro, quando for fazer uma versonalização do arquivo, vai gerar conflito na hora você
+querer saber a diferença entre um e outro.
+3. isso vale também para os arrays.
+  - mas a abertura do array, pode ser na mesma linha, e o fechamento do array, pode ser numa linha separada.
+
 
 */
