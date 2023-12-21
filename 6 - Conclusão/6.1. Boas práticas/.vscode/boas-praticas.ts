@@ -1,35 +1,36 @@
-// evitar colocar variável no scopo global, pois pode gerar conflito de nomes e dificultar a identificação de erros.
-
-var escopo: string = 'global';
-
-// Em vez disso, pode-se usar uma função auto executável para limitar o escopo da variável:
+"use strict";
+// Boas práticas: Evitar o Hoisting
 (function() {
-    var escopo: string = 'local';
+  escopo = 'local';
+  console.log(escopo);
+
+
+  
+  var escopo: string;
 })();
 
 /* 
-Um bom motivo para evitar o uso de variáveis globais é que elas ficam acessíveis em todo o código. 
-Isso pode levar a problemas de legibilidade, manutenção e reutilização do código. Quando uma variável 
-é declarada como global, ela pode ser modificada e acessada por qualquer parte do programa, o que pode 
-levar a efeitos colaterais indesejados e dificultar a identificação de erros.
+O hoisting é um comportamento do JavaScript em que as declarações de variáveis e funções são movidas para o topo do escopo em tempo de compilação. 
+Embora o hoisting seja uma característica do JavaScript, é considerado uma prática ruim e pode levar a comportamentos inesperados e difíceis de depurar.
 
-Além disso, o uso excessivo de variáveis globais pode levar a conflitos de nomes, especialmente em 
-projetos maiores com várias partes do código. Isso ocorre porque qualquer parte do código pode acessar e 
-modificar a variável global, o que pode levar a erros difíceis de depurar.
+Para evitar o hoisting e escrever um código mais legível e previsível, é recomendado seguir as seguintes boas práticas:
 
-Em vez disso, é uma prática recomendada limitar o escopo das variáveis ao mínimo necessário. Isso pode 
-ser feito usando técnicas como encapsulamento, onde as variáveis são declaradas dentro de funções ou 
-classes, tornando-as acessíveis apenas dentro desses blocos de código específicos. Isso ajuda a evitar 
-colisões de nomes e torna o código mais modular e fácil de entender.
+1. Declare todas as variáveis no início do escopo: É uma boa prática declarar todas as variáveis no início do escopo em que serão usadas. Isso torna o 
+código mais fácil de entender e evita problemas relacionados ao hoisting.
 
-Por exemplo, em vez de declarar a variável como global, você pode declará-la dentro de uma função ou 
-classe, limitando seu escopo apenas a esse contexto específico:
+2. Utilize o modo estrito (strict mode): O modo estrito do JavaScript (strict mode) é uma funcionalidade que permite escrever código JavaScript mais 
+seguro e restrito. Ao habilitar o modo estrito, o JavaScript é executado em um ambiente mais restrito, onde algumas práticas ruins, como o hoisting, 
+são proibidas. Para habilitar o modo estrito, adicione a seguinte linha no início do seu arquivo JavaScript ou TypeScript:
 
-function minhaFuncao() {
-  var variable = 'local';
-  // Resto do código...
-}
+"use strict";
 
-Dessa forma, a variável variable só estará acessível dentro da função minhaFuncao(), evitando possíveis 
-problemas causados pelo escopo global.
+Ao utilizar o modo estrito, o JavaScript irá lançar erros para práticas ruins, como o uso de variáveis não declaradas e atribuições a propriedades 
+somente leitura.
+
+3. Utilize o TypeScript: O TypeScript é um superset do JavaScript que adiciona recursos de tipagem estática ao JavaScript. O TypeScript é compilado para 
+JavaScript antes de ser executado, o que permite que o compilador faça otimizações e verifique erros em tempo de compilação. O TypeScript também ajuda 
+a evitar problemas relacionados ao hoisting, pois as declarações de variáveis e funções são movidas para o topo do escopo durante o processo de 
+compilação.
+
+Seguindo essas boas práticas, você pode evitar problemas relacionados ao hoisting e escrever um código mais legível, previsível e seguro.
 */
