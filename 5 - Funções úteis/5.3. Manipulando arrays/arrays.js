@@ -5,6 +5,8 @@ console.log(array.join(" | ")); // Ned | Jon | Robb | Bran | Rickon
 array.push("Sansa"); // ["Ned", "Jon", "Robb", "Bran", "Rickon", "Sansa"]
 array.unshift("Catelyn");
 console.log(array);
-// remove the last element
 var element = array.pop();
-console.log(element); // Sansa
+// remove the first element
+element = array.shift();
+console.log(element); // Catelyn
+console.log(array); // ["Ned", "Jon", "Robb", "Bran", "Rickon"]

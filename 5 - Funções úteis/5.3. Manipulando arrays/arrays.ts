@@ -9,8 +9,10 @@ array.unshift("Catelyn");
 
 console.log(array); 
 
-// remove the last element
-
 var element: string | undefined = array.pop(); 
 
-console.log(element); // Sansa
+// remove the first element
+element = array.shift();
+
+console.log(element); // Catelyn
+console.log(array); // ["Ned", "Jon", "Robb", "Bran", "Rickon"]
