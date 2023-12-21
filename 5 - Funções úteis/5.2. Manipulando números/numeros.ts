@@ -5,10 +5,10 @@ var z: number = 0.99999999999999999; // 1
 
 var a: number = 0xFFF; // 4095
 
+var b: number = 0o7777; // 4095
+console.log(b.toString(16));
 
-// toString - converte para string com base no parametro. 
-// Se não for passado parametro, converte para base 10
+// exponencial
 
-var b: number = 0o7777;
+console.log(x.toExponential());
 
-console.log(b.toString()); // base 10
