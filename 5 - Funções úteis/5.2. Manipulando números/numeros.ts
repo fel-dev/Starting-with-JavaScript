@@ -1,1 +1,1 @@
-var x: number = 30.000;
+var x: number = 456e5; //45600000
