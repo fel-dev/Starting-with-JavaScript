@@ -7,4 +7,4 @@ var b = 0o7777; // 4095
 console.log(b.toString(16));
 console.log(x.toExponential()); // 4.56e+7
 console.log((5.889).toFixed(2)); // preço da gasolina
-console.log((5.889).toPrecision(1)); // 6 (arredonda)
+console.log((5.889).toPrecision(2)); // 5.9
