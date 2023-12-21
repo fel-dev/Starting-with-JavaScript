@@ -30,8 +30,8 @@ array.splice(3, 1); // Removing element Robb, index 3, 1 element
 console.log(array);  // ["Ned", "Arya", "Sansa", "Bran", "Rickon"]
 
 // join two arrays in one with concate method
-array = array.concat(splice) // concat returns a new array, it does not alter the original array. need to assign it to a variable
-console.log(array); // ["Ned", "Arya", "Sansa", "Bran", "Rickon", "Jon Snow"]
+array = array.concat(splice, slice) // with variable slice and splice above, before removed, now concat back to array 
+console.log(array); // ["Ned", "Arya", "Sansa", "Bran", "Rickon", "Jon Snow", "Bran"]
 
 
 
